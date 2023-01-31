@@ -57,7 +57,7 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
 - URI(Uniform Source Identifier)
     - 문자열 식별자로 신택스 규칙에 따라 통일성을 확인한다. 
     - 이름 및 경로 정보로 인터넷에서 리소스를 식별하는 데 사용되는 문자열로 구성된다. 
-    - URN 체계를 지정하는 인터넷 리소스로 리소스를 일관되게 식별할 수 있다.
+    - URN 체계를 지정하는 인터넷 리소스로 리소스를 일관되게 식별할 수 있다. 
     - URI는 URL과 URN을 모두 설명할 수 있다.
     - HTTP, HTTPs, ftp, Idap, telnet은 모두 URI 체계이다.
 - URN(Uniform Resource Name)
