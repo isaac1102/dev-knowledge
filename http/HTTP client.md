@@ -48,7 +48,7 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
         - 버클리 소켓 은 IPC( 프로세스 간 통신 ) 에 사용되는 인터넷 소켓 및 Unix 도메인 소켓 용 애플리케이션 프로그래밍 인터페이스 (API)이다.
         - POSIX 소켓 혹은 BSD 소켓으로도 알려져 있다. 
 
-[Socket 통신 간단히 구현해 보기](<http/client_sample.java>) 
+[Socket 통신 간단히 구현해 보기](<./client_sample.md>) 
 
 ## URI와 URL
 - URL과 URI는 자주 혼용되어 사용되는 용어이지만 동일하지 않다. 
