@@ -76,11 +76,11 @@ HTTP Cookie는 클라이언트의 상태를 서버에 전달하기 위해 저장
 5. 5xx → 서버 쪽 문제 ⇒ 500 Internal Server Error
 
 # 멱등성
-- https://developer.mozilla.org/ko/docs/Glossary/Idempotent
+- [https://developer.mozilla.org/ko/docs/Glossary/Idempotent](https://developer.mozilla.org/ko/docs/Glossary/Idempotent)
 - 동일한 요청을 한 번 보내는 것과 여러 번 연속으로 보내는 것이 같은 효과를 지니고, 서버의 상태도 동일하게 남을 때, 해당 HTTP 메서드가 멱등성을 가졌다고 말한다. 
 - 올바르게 구현한 경우 GET, HEAD, PUT, DELETE 메서드는 멱등성을 가지며, POST 메서드는 그렇지 않다. 모든 안전한 메서드는 멱등성도 가진다.
 # 리다이렉션
-- https://developer.mozilla.org/ko/docs/Web/HTTP/Redirections
+- [https://developer.mozilla.org/ko/docs/Web/HTTP/Redirections](https://developer.mozilla.org/ko/docs/Web/HTTP/Redirections)
 - URL 리다이렉션 혹은 URL 포워딩은 페이지 단위의 실제 리소스, 폼 혹은 전체 웹 애플리케이션이 다른 URL에 위치하고 있는 상태에서 링크를 존속시키는 기술입니다. HTTP는 많은 목표를 위해 사용되는 이런 동작을 수행하기 위해 특별한 종류의 응답인 HTTP 리다이렉트를 제공한다.
 - HTTP 리다이렉트는 3xx 상태 코드를 지닌 응답.
 - 대부분의 경우, 리다이렉션은 사용자에게는 보이지 않는데다가, 적은 성능 저하를 일으킴
