@@ -42,7 +42,7 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
     - 파일과 유사하게 다룰 수 있다. 
         - 유닉스에서는 파일 디스크립터의 일종과 유사하다.
         - 읽기, 쓰기 등의 동작이 있다. 
-        - Java에서는 키보드 입력, 화면 출력, 파일 입출력 등과 마찬가지로 Stream(Java8의 Stream API가 아님)으로 다룰 수 있다. 
+        - Java에서는 키보드 입력, 화면 출력, 파일 입출력 등과 마찬가지로 Stream(Java8의 Stream API가 아님)으로 다룰 수 있다.  
 - Socket API
     - Socket을 사용하기 위한 API이다.
     - Berkeley Sockets
