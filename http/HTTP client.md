@@ -3,15 +3,14 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
 ---
 
 # HTTP client 
-## TCP/IP 통신
-- 인터넷 프로토콜 스위트 중의 하나로서 가장 많이 사용되는 통신방법이다.
-    - [https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C_%EC%8A%A4%EC%9C%84%ED%8A%B8](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C_%EC%8A%A4%EC%9C%84%ED%8A%B8)
-    - 인터넷 프로토콜 스위트(영어: Internet Protocol Suite)는 인터넷에서 컴퓨터들이 서로 정보를 주고받는 데 쓰이는 통신규약(프로토콜)의 모음이다. 인터넷 프로토콜 슈트 중 TCP와 IP가 가장 많이 쓰이기 때문에 TCP/IP 프로토콜 슈트라고도 불린다.
+## [TCP/IP 통신](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C_%EC%8A%A4%EC%9C%84%ED%8A%B8)
+ 
+- 인터넷 프로토콜 스위트 중의 하나로서 가장 많이 사용되는 통신방법이다. 
+- 인터넷 프로토콜 스위트(영어: Internet Protocol Suite)는 인터넷에서 컴퓨터들이 서로 정보를 주고받는 데 쓰이는 통신규약(프로토콜)의 모음이다. 
+- 인터넷 프로토콜 슈트 중 TCP와 IP가 가장 많이 쓰이기 때문에 TCP/IP 프로토콜 슈트라고도 불린다.
 - TCP/IP에서 TCP는 TCP프로토콜을 의미하진 않는다. 
 
-## 전송계층 
-- [https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EA%B3%84%EC%B8%B5](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EA%B3%84%EC%B8%B5)
-- 여러가지 프로토콜이 존재하지만, 가장 많이 쓰이는 TCP와 UDP에 대해 알아보았다.
+## [전송계층](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1_%EA%B3%84%EC%B8%B5)  
 - TCP
     - 연결이 필요하다.
     - 전달성공 여부 및 순서가 보장된다. (전화, 등기우편)
@@ -48,6 +47,8 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
     - Berkeley Sockets
         - 버클리 소켓 은 IPC( 프로세스 간 통신 ) 에 사용되는 인터넷 소켓 및 Unix 도메인 소켓 용 애플리케이션 프로그래밍 인터페이스 (API)이다.
         - POSIX 소켓 혹은 BSD 소켓으로도 알려져 있다. 
+
+[Socket 통신 간단히 구현해 보기](<http/client_sample.java>)
 
 ## URI와 URL
 - URL과 URI는 자주 혼용되어 사용되는 용어이지만 동일하지 않다. 
