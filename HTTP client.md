@@ -1,6 +1,5 @@
 ---
 description: HTTP client의 개념과 간단한 구현을 해보았습니다.
-MDN 문서를 기본적으로 참조하는 내용입니다.
 ---
 
 # HTTP client
