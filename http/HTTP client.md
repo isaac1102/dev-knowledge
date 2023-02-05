@@ -48,7 +48,7 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
         - 버클리 소켓 은 IPC( 프로세스 간 통신 ) 에 사용되는 인터넷 소켓 및 Unix 도메인 소켓 용 애플리케이션 프로그래밍 인터페이스 (API)이다.
         - POSIX 소켓 혹은 BSD 소켓으로도 알려져 있다. 
 
-[Socket 통신 간단히 구현해 보기](<./client_sample.java>) 
+[Socket 통신 간단히 구현해 보기](<./ClientSample.java>) 
 
 ## URI와 URL
 - URL과 URI는 자주 혼용되어 사용되는 용어이지만 동일하지 않다. 
@@ -92,9 +92,6 @@ description: HTTP client의 개념과 간단한 구현을 해보았습니다.
 - 포트는 네트워크에 연결된 모든 장치에서 표준화되며 각 포트에는 번호가 사용된다. 
 - HTTP 포트의 기본값은 80이다.
 - IP주소를 사용하면 메시지가 특정 장치와 주고받을 수 있지만 포트 번호는 해당 장치 내의 특정 서비스나 응용 프로그램을 대상으로 지정할 수 있게 해준다. 
-- IP주소는 네트워크 통신 간에 장치를 구분하게 해주지만, 포트 번호는 해당 장치 내의 특정 서비스나 응용 프로그램을 식별하고 지정하라 수 있게 해준다. 
- 
-## Java InputStream과 OutputStream
-## Java try-with-resources
+- IP주소는 네트워크 통신 간에 장치를 구분하게 해주지만, 포트 번호는 해당 장치 내의 특정 서비스나 응용 프로그램을 식별하고 지정하라 수 있게 해준다.  
 
 참고자료 : [https://developer.mozilla.org/ko](https://developer.mozilla.org/ko)
