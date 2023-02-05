@@ -7,3 +7,4 @@
 * [HTTP client](<http/HTTP client.md>)
 * [HTTP server](<http/HTTP server.md>)
 * [Java HTTP Server](<http/Java HTTP Server.md>)
+* [Spring HTTP Server by MVC](http/http-server-spring.md)
