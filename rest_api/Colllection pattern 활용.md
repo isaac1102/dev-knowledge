@@ -27,19 +27,25 @@ rest api에서 Collection Pattern과 함께 주로 사용하는 method는 4개�
 |POST|Create|/posts|게시물 생성, Post Id는 서버에서 생성한다.|
 |PUT / PATCH|Update|/posts/{id}|게시물 수정 (Element)|
 |DELETE|Delete|/posts/{id}|게시글 삭제(Element)|
+<br>
+   
+ ### comment의 경우 직접적으로 comment에 접근하는 path를 사용할 수도 있다. 
+ <br>   
 
-comment의 경우 직접적으로 comment에 접근하는 path를 사용할 수도 있다. 
-GET /comments
-GET /comments?post_id={post_id}
-GET /comments/{id}
-POST /comments (postId를 어떻게든 담아 줘야 한다.)
-POST /comments?post_id={post_id}
-PUST or PATCH /comments{id}
-DELETE /comments/{id}
+|method|path|
+|--|--|
+|GET| /comments|   
+|GET| /comments?post_id={post_id}|   
+|GET| /comments/{id}|   
+|POST| /comments (postId를 어떻게든 담아 줘야 한다.)|   
+|POST| /comments?post_id={post_id}|   
+|PUST| or PATCH /comments{id}|   
+|DELETE| /comments/{id}|   
+<br>   
 
+### post와 comment의 관계는 일반적으로 comment가 있으려면 post의 존재가 선행돼야하기 때문에 comment는 post의 하위요소로 볼 수도 있다. 
+<br>   
 
-post와 comment의 관계는 일반적으로 comment가 있으려면 post의 존재가 선행돼야하기 때문에 
-comment는 post의 하위요소로 볼 수도 있다. 
 |method|path|설명|
 |--|--|--|
 |GET| /posts/{post_id}/comments|   특정 게시글의 댓글목록|
