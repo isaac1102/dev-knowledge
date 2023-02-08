@@ -20,7 +20,7 @@ public class App {
 	 */
 	private void run() throws IOException {
 		// 1. Listen
-		ServerSocket listener= new ServerSocket(8080, 0); // port, backlog count
+		ServerSocket listener = new ServerSocket(8080, 0); // port, backlog count
 		System.out.println("Listen!"); 
 		
 		// 2. Accept
