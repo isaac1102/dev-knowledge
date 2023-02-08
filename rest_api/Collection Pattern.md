@@ -1,14 +1,9 @@
 # Rest API의 Collection Pattern
 
 ## Collection pattern
-rest-api에서 리소스를 표현하는 데 있어서 중요한 패턴이다.
-흔히 말하는 restful하다는 것을 가르는 요소 중의 하나로 COllection Pattern을 얼마나 준수하는가로 판단할 정도이다. Collection이라는 단어로 추정해보면 일단 무언가의 모음집이라는 의미로 볼 수 있는데 리소스들을 한 묶음으로 모아서 마치 디렉토리처럼 표현한다고 보면 이해하기 좋을 것 같다. 
+rest-api에서 리소스를 표현하는 데 있어서 중요한 패턴이다. 흔히 말하는 restful하다는 것을 가르는 요소 중의 하나로 COllection Pattern을 얼마나 준수하는가로 판단할 정도이다. Collection이라는 단어로 추정해보면 일단 무언가의 모음집이라는 의미로 볼 수 있는데 리소스들을 한 묶음으로 모아서 마치 디렉토리처럼 표현한다고 보면 이해하기 좋을 것 같다. 
 
- post라고 불리는 게시글들이 있다고 가정해보자.   
-posts라는 복수형으로 표기한다면 게시글의 복수로 표현이 된다.   
-/posts라고 적는다면 여러 post들을 지칭할 수 있다.   
-여기서 특정 post를 지칭하고자 한다면   
-/posts/{post의 id} 혹은 /posts/:id의 형식으로 표현할 수 있다.   
+ post라고 불리는 게시글들이 있다고 가정해보자. posts라는 복수형으로 표기한다면 게시글의 복수로 표현이 된다. /posts라고 적는다면 여러 post들을 지칭할 수 있다. 여기서 특정 post를 지칭하고자 한다면 /posts/{post의 id} 혹은 /posts/:id의 형식으로 표현할 수 있다.   
 
 여기서 id라는 개념에 주의해야 한다. 위에서 언급한 id는 post의 id이지 resource의 id는 아니다. posts라는 폴더 내에서 post를 식별하는 id의 개념이지, 전체를 아우르며 resource를 식별하는 uri가 되지는 않는다는 의미이다. 다만 resource Id를 구성하는 요소 중의 하나로서 post id가 사용된다고 볼 수 있겠다. 
 
