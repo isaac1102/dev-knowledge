@@ -85,8 +85,7 @@ uniform interface 제약조건은 무엇이길래?
 <br>
 identification of resource와 manipulation of resource through representations 제약조건은 비교적 잘 지켜진다.   
 하지만 self-descriptive messages와 Hypermedia as the engine of application state(HATEOAS)의 경우는 잘 지켜지지 않았다.  
-요즘 흔히 말하는 REST API의 대부분은 이 두가지를 지키지 못하고 있다. 
-하나씩 살펴보면,
+요즘 흔히 말하는 REST API의 대부분은 이 두가지를 지키지 못하고 있다.  
 
 ## self-descriptive messages
 
