@@ -17,3 +17,4 @@
 
 ### DTO & JSON & CORS
 * [DTO?](<DTO_JSON_CORS/DTO.md>)
+* [Jackson ObjectMapper](<DTO_JSON_CORS/Jackson ObjectMapper.md>)
