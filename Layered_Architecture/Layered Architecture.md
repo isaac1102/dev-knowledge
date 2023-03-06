@@ -1,5 +1,5 @@
 # Layered Architecture
- Layered Architecture는 엄밀히 말하자면 Layered Architecture Style이라고 말할 수 있다. 아키텍쳐와 아키텍쳐 스타일의 차이는 [여기](<rest_api/rest-api.md>)에 정리해 뒀다.
+ Layered Architecture는 엄밀히 말하자면 Layered Architecture Style이라고 말할 수 있다. 아키텍쳐와 아키텍쳐 스타일의 차이는 [여기](<../rest_api/rest-api.md>)에 정리해 뒀다.
 
 - 관심사의 분리(Separation of concerns)
     - 우선 '관심사'란 컴퓨터 프로그램 코드에 영향을 미치는 정보의 집합 혹은 범위라고 말할 수 있겠다. 
