@@ -67,4 +67,5 @@
 
 ## BeanFactory
 - Bean을 생성하고 관리하는 인터페이스이다. Spring Container의 핵심 기능 중의 하나이다. 
-- BeanFactory 인터페이스를 구현한 클래스로는 DefaultListableBeanFactory, XmlBeanFactory 등이 있다. 이 클래스들은 스프링 컨테이너에서 Bean을 생성하고 관리하는 기능을 구현했다. 
+- BeanFactory 인터페이스를 구현한 클래스로는 `DefaultListableBeanFactory`, `XmlBeanFactory`, `ApplicationContext` 등이 있다. 이 클래스들은 스프링 컨테이너에서 Bean을 생성하고 관리하는 기능을 구현했다. 
+
