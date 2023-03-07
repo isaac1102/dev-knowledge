@@ -1,6 +1,31 @@
-- 통합 테스트(Integration Test)
-- `@Autowired`
-- `@SpyBean`
-- MockMvc
-- MockBean
-- `@WebMvcTest`
+## 통합 테스트(Integration Test)
+- 통합 테스트는 전체 모듈이 합쳐졌을 때 정상적으로 작동하는 지 검증하는 방법이며 단계이다. 
+- 각 모듈이나 유닛이 별개로는 정상적으로 작동하더라도 서로 연계됐을 때는 어떤 문제가 발생할 지 모르기 때문에 필요한 테스트라고 볼 수 있다.  
+<br>
+
+## `@Autowired`
+- `@Autowired`는 객체를 `Spring container`에 의해서 자동으로 주입해주는 기능을 수행하게 하는 어노테이션이다. 
+
+## `@SpyBean`
+- `@SpyBean`은 `Mock`객체를 생성하지 않고도 스프링 빈(Bean)을 감시하고 행위를 검증할 수 있도록 도와준다.
+- 보통 `@MockBean` 어노테이션을 사용하여 테스트용 모의 객체를 생성하고, 이를 통해 테스트를 수행한다. 하지만 때에 따라서는 실제 빈을 사용해야 하는 상황도 있는데 이때, `@SpyBean` 어노테이션을 사용하여 실제 빈을 감시하면서 테스트를 수행할 수 있다.
+
+## MockMvc
+- `MockMvc`는 스프링 프레임워크에서 제공하는 테스트 프레임워크인데, 주로 스프링 애플리케이션의 API를 테스트에 사용된다.
+- `MockMvc`는 HTTP 요청을 모방하여 컨트롤러의 메서드를 호출하고, 응답 결과를 검증하는 기능을 제공한다. 덕분에 개발자는 마치 실제 HTTP 요청과 응덥을 처리하는 것처럼 비슷한 방식으로 테스트를 작성할 수 있다.
+- HTTP요청과 관련된 테스트라는 점에서 유추가 가능하듯이, Controller의 메서드를 호출하여 테스트할 경우 유용하다.  
+ 
+## MockBean
+- Mock은 껍데기만 있는 객체를 말한다. 기존의 `Bean`의 껍데기만 가져오고 내부 구현은 사용자에게 위임하는 방식이다. 마치 java의 interface처럼 말이다.
+- `@MockBean` 어노테이션을 사용하여 테스트용 모의 객체를 생성하고, 이를 통해 테스트를 수행한다.
+
+## @SpyBean과 @MockBean의 차이
+- `@MockBean`과의 차이점은 `given`에서 선언한 동작만 할수 있는 `@MockBean`과는 달리, `@SpyBean`은 `given`에서 선언한 코드 외에는 모두 실제 객체의 것을 사용한다. 이미 존재하는 Bean을 `SpyBean`으로 wrapping한 형태라고 생각하면 된다고 한다. (jojoldu님 표현)
+
+## `@WebMvcTest`
+- 이 어노테이션은 MVC 컨트롤러에 대한 단위 테스트 작성 시에 사용한다.
+- 컨트롤러  테스트를 하려면 spring 내부의 context 정보를 , 서버와 관련된 자원이 필요할 수 있다. 하지만 `@WebMvcTest`를 사용하면 필요한 스프링 MVC 구성요소만 로드된다. 따라서 불필요한 구성 요소들의 로딩을 줄이고 테스트 속도를 올릴 수 있다.
+- 이 어노테이션은 MockMvc 객체를 제공한다. 위에 기술한 것처럼 MockMvc 객체는 HTTP 요청과 관련된 테스트 기능을 제공한다.
+ 
+
+[Mockito 한글문서](https://github.com/mockito/mockito/wiki/Mockito-features-in-Korean)
