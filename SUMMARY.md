@@ -39,3 +39,11 @@
 * [Entity-Relationship Model](<Database/Entity-Relationship.md>)
 * [JDBC](<Database/JDBC.md>)
 * [JdbcTemplate](<Database/JdbcTemplate.md>)
+
+
+### JPA
+* [ORM](<JPA/ORM.md>)
+* [Hibernate](<JPA/Hibernate.md>)
+* [Embeddable](<JPA/Embeddable.md>)
+* [Relationship Mapping](<JPA/Relationship Mapping.md>)
+* [Spring Data JPA](<JPA/Spring Data JPA.md>)
